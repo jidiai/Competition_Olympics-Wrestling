@@ -96,7 +96,7 @@ def run_game(g, env_name, multi_part_agent_ids, actions_spaces, policy_list, ren
         if policy_list[i] not in get_valid_agents():
             raise Exception("agent {} not valid!".format(policy_list[i]))
 
-        file_path = os.path.dirname(os.path.abspath(__file__)) + "/agents/" + policy_list[i] + "/submission.py"
+        file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "agents", policy_list[i], "submission.py")
         if not os.path.exists(file_path):
             raise Exception("file {} not exist!".format(file_path))
 
