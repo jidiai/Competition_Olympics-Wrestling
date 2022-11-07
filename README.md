@@ -5,9 +5,6 @@
 <img src=https://jidi-images.oss-cn-beijing.aliyuncs.com/jidi/env74.gif width=600>
 
 
-Check details in Jidi Competition [RLChina 智能体挑战赛 - 壬寅年秋赛季](http://www.jidiai.cn/compete_detail?compete=23)
-
-
 ### Olympics-Integrated
 <b>Tags: </b>Partial Observation; Continuous Action Space; Continuous Observation Space
 
@@ -30,8 +27,6 @@ Check details in Jidi Competition [RLChina 智能体挑战赛 - 壬寅年秋赛�
 <b>Reward: </b>Each team obtains a +100 reward when scoring the ball into the opponent's goal, otherwise 0 point.
 
 <b>Environment ends condition: </b>The game ends when reaching maximum number of 500 steps or one side falls into the challenge arena.
-
-<b>Registration: </b>Go to (http://www.jidiai.cn/compete_detail?compete=23).
 
 
 ---

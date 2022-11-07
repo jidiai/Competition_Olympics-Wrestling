@@ -69,6 +69,7 @@ def get_joint_action_eval(game, multi_part_agent_ids, policy_list, actions_space
             agent_id = agents_id_list[i]
             a_obs = all_observes[agent_id]
             each = eval(function_name)(a_obs, action_space_list[i], game.is_act_continuous)
+            game.is_single_valid_action(each, action_space_list[i], policy_i)
             joint_action.append(each)
     print(joint_action)
     return joint_action
