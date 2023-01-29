@@ -101,7 +101,8 @@ def run_game(g, env_name, multi_part_agent_ids, actions_spaces, policy_list, ren
         if not os.path.exists(file_path):
             raise Exception("file {} not exist!".format(file_path))
 
-        import_path = '.'.join(file_path.split('/')[-3:])[:-3]
+        # import_path = '.'.join(file_path.split('/')[-3:])[:-3]
+        import_path = '.'.join(['agents', policy_list[i], 'submission'])
         function_name = 'm%d' % i
         import_name = "my_controller"
         import_s = "from %s import %s as %s" % (import_path, import_name, function_name)
